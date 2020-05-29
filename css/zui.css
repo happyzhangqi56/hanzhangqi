@@ -1,0 +1,125 @@
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.mengban{
+				width: 100%;
+				height: 100%;
+				z-index: 99;
+				background:rgba(0,0,0,.2);
+				position: fixed;
+				top: 0;
+				left: 0;
+				display: none;
+			}
+			.wrap{
+				width: 800px;
+				height: 500px;
+				border: 1px solid #ddd;
+				margin:100px auto;
+				
+			}
+			.wrap img{
+				width: 100%;
+				height:90%;
+				z-index: -999;
+			}
+			.flex{
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: center;
+				
+			}
+			.flex .btn:nth-child(1){
+				background-color: #b3d4fc;
+			}
+			.flex .btn:nth-child(2){
+				background-color: #ddf3f5;
+			}
+			.flex .btn:nth-child(3){
+				background-color: #f5eeff;
+			}
+			.flex .btn:nth-child(4){
+				background-color: #f1f1f1;
+			}
+			.flex .btn{
+				/* width: 40px; */
+				/* height: 30px; */
+				margin: 10px auto;
+				/* background-color: sandybrown; */
+				text-align: center;
+				line-height: 30px;
+				border-radius: 5px;
+				font-size: 13px;
+			}
+			.dialog{
+				z-index: 99;
+				/* width: 600px; */
+				/* height: 200px; */
+				background-color: #FFF;
+				margin: 100px auto;
+				border: 1px solid #CCCCCC;
+				border-radius: 12px;
+				/* box-shadow:2px 2px 2px #ddd,2px -2px 2px #ddd,-2px 2px 2px #ddd,-2px -2px 2px #ddd; */
+				display: block;
+				position: absolute;
+				top: -50px;
+				left: 460px;
+				transition: all .8s;
+			}
+			/* .dialog:visited{
+				transform: rotate(180deg);
+				
+				opacity: 1;
+			} */
+			.dialog .biaoti{
+				width: 100%;
+				height: 25%;
+				/* background-color: #0000FF; */
+				position: relative;
+			}
+			.dialog .biaoti h3{
+				/* margin: 10px 0 0 10px; */
+				padding: 8px;
+			}
+			.biaoti{
+				
+			}
+			.biaoti i{
+				position: absolute;
+				right: 15px;
+				top: 15px;
+			}
+			.biaoti i:hover{
+				transform: rotate(90deg);
+				transition: all .5s;
+			}
+			.dialog .content{
+				width: 100%;
+				height: 50%;
+				/* background-color: salmon; */
+				border-top: 1px solid #C0C0C0;
+				border-bottom: 1px solid #C0C0C0;
+				/* margin: 10px 0 0 10px; */
+				/* padding: 8px; */
+			}
+			.dialog .anniu{
+				width: 100%;
+				height: 25%;
+				/* background-color: seagreen; */
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: flex-end;	
+			}
+			.anniu >.queding,.anniu >.quxiao{
+				width: 50px;
+				height: 80%;
+				text-align: center;
+				line-height: 40px;
+				background-color:#3280fc;
+				border-radius: 10px;
+				margin: 3px 10px 0 0;
+			}
+			.dialog >.anniu >.queding{
+				background-color:#f2f2f2;
+			}
