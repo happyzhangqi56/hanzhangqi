@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/zui.css">
+		<link rel="stylesheet" href="font/font_1276160_z90b36pgrsl/iconfont.css">
+		<title>zui-对话框</title>
+	</head>
+	<body>
+			<div class="mengban">	
+			</div>
+			<div class="wrap">
+				<img src="img/50da81cb39dbb6fdff4bf8400f24ab18972b3747.jpg" alt="">
+				<div class="flex">
+					<div class="btn">
+						Default
+					</div>
+					<div class="btn">
+						Upper
+					</div>
+					<div class="btn">
+						Middle
+					</div>
+					<div class="btn">
+						Under
+					</div>
+				</div>
+			</div>
+			<!-- // 模板部分 -->
+			<!-- <div class="dialog">
+				<div class="biaoti">
+					<h2>标题</h2>
+					<i class="iconfont">&#xe602;</i>
+				</div>
+				<div class="content">
+					<p>内容部分内容部分</p>
+				</div>
+				<div class="anniu">
+					<div class="queding">取消</div>
+					<div class="quxiao">确定</div>
+				</div>
+			</div> -->
+	
+	</body>
+</html>
+<script src="https://cdn.bootcdn.net/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/zui.js"></script>
+<script>
+	var obj={
+		title:'我是标题',  // 标题
+		content:'我是内容部分',  // 内容部分
+		width:600,  // 对话框的宽
+		height:200, // 对话框的高
+		shadow:'5px 5px 5px #ddd,5px -5px 5px #ddd,-5px 5px 5px #ddd,-5px -5px 5px #ddd',  // 对话框的阴影
+		cancelmouseout:'#f2f2f2',  // 取消按钮的出去状态颜色
+		cancelmouseover:'#dedede',  // 取消按钮的进入状态颜色额
+		suremouseout:'#3280fc',  // 确定按钮的出去状态颜色
+		suremouseover:'#0A67FB', // 确定按钮的进入状态颜色
+	    opacity:'1'	,// 对话框的透明度
+		appear:['defaultde','top','center','bottom']  ,// 对话框出现浏览器视口的四个位置
+		select:'center',  // 默认的位置居中
+		top:'-60px',
+		center:'100px',
+		bottom:'300px',
+		defaultde:'100px',
+		flag:false,  // false true切换状态
+		diaX:'x',
+		diaY:'y'
+	}
+	var objthere={
+		title:'我是标题',  // 标题
+		content:'我是内容部分',  // 内容部分
+		width:600,  // 对话框的宽
+		height:200, // 对话框的高
+		shadow:'5px 5px 5px #ddd,5px -5px 5px #ddd,-5px 5px 5px #ddd,-5px -5px 5px #ddd',  // 对话框的阴影
+		cancelmouseout:'#f2f2f2',  // 取消按钮的出去状态颜色
+		cancelmouseover:'#dedede',  // 取消按钮的进入状态颜色额
+		suremouseout:'#3280fc',  // 确定按钮的出去状态颜色
+		suremouseover:'#0A67FB', // 确定按钮的进入状态颜色
+	    opacity:'1'	,// 对话框的透明度
+		appear:['defaultde','top','center','bottom']  ,// 对话框出现浏览器视口的四个位置
+		select:'bottom',  // 默认的位置居中
+		top:'-60px',
+		center:'100px',
+		bottom:'300px',
+		defaultde:'100px',
+		flag:false,  // false true切换状态
+		diaX:'x',
+		diaY:'y'
+	}
+	window.onload=function(){
+		var btn=document.querySelectorAll('.btn')
+		// for(var v=0;v<=btn.length;v++){
+			btn[0].onclick=function(){
+				document.getElementsByClassName('mengban')[0].style.display ='block';
+				var mode = new Mode(obj)
+			}
+			btn[1].onclick=function(){
+				document.getElementsByClassName('mengban')[0].style.display ='block';
+				var mode = new Mode(obj,'top')
+			}
+			btn[2].onclick=function(){
+				document.getElementsByClassName('mengban')[0].style.display ='block';
+				var mode = new Mode(obj,'Midd')
+			}
+			btn[3].onclick=function(){
+				document.getElementsByClassName('mengban')[0].style.display ='block';
+				var mode = new Mode(objthere,'bottom')
+			}
+	}
+	
+
+
+</script>
