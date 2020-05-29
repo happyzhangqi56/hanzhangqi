@@ -1,0 +1,51 @@
+{
+  "id": "1276160",
+  "name": "1903B第二月实训项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6303584",
+      "name": "取消",
+      "font_class": "quxiao",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "830347",
+      "name": "个人中心",
+      "font_class": "icon7",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "915609",
+      "name": "商品",
+      "font_class": "shangpin",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "1901647",
+      "name": "品牌",
+      "font_class": "pinpai",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "2116270",
+      "name": "购物车",
+      "font_class": "cart_icon",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "4186492",
+      "name": "首页",
+      "font_class": "shouye1",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    }
+  ]
+}
