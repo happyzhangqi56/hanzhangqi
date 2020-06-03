@@ -1,0 +1,26 @@
+{
+  "name": "twoalert-hzq168",
+  "version": "1.0.0",
+  "description": "zui-自定义的对话框",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happyzhangqi56/hanzhangqi.git"
+  },
+  "keywords": [
+    "zui对话框"
+  ],
+  "author": "hzq168",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/happyzhangqi56/hanzhangqi/issues"
+  },
+  "homepage": "https://github.com/happyzhangqi56/hanzhangqi#readme",
+  "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-contrib-uglify": "^4.0.1"
+  }
+}

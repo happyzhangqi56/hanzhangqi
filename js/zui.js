@@ -35,6 +35,7 @@ var that;
 		this.updateNode();
 		this.init();
 		this.close();
+		this.callback = obj.callback ; 
 		// this.mousedown();
 		// this.Node();
 	}
@@ -119,11 +120,17 @@ var that;
 	// 	console.log(this.child)
 	// }
 	// 给取消按钮绑定事件
+
 	Mode.prototype.out=function(){
 		that = this;
 		// this.updataNode();
 		// console.log(this.child)
 		// var child = this.die.childNodes;
+			this.queding.onclick=function(){
+				that.callback.call(null);
+				that.diaDiv[0].remove();
+				that.mengban[0].style.display='none';
+			}
 			this.quxiao.onclick=function(){
 				// that.die.removeChild(that.diaDiv[0]);
 				that.diaDiv[0].remove();
